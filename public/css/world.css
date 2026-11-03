@@ -1,0 +1,279 @@
+.world {
+    position: absolute;
+    inset: 0;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(23, 35, 72, 0.35),
+            transparent 45%
+        ),
+        #03050b;
+}
+
+
+/* GRID */
+
+.grid {
+    position: absolute;
+    inset: -50%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 234, 255, 0.06) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 234, 255, 0.06) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    transform: perspective(500px) rotateX(60deg);
+
+    animation: gridMove 12s linear infinite;
+}
+
+
+/* STARS */
+
+.stars {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(circle, white 1px, transparent 1px),
+        radial-gradient(circle, rgba(0,234,255,.7) 1px, transparent 1px);
+
+    background-size:
+        120px 120px,
+        200px 200px;
+
+    opacity: 0.25;
+
+    animation: starsMove 20s linear infinite;
+}
+
+
+/* ISLAND */
+
+.island {
+    position: absolute;
+
+    width: 210px;
+    height: 210px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 5;
+}
+
+.island-core {
+    position: absolute;
+
+    inset: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(10, 25, 50, 0.95),
+            rgba(2, 5, 12, 0.98)
+        );
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        inset 0 0 30px rgba(0, 234, 255, 0.08),
+        0 0 30px rgba(0, 234, 255, 0.12);
+
+    transition: 0.4s;
+}
+
+.island-core span {
+    color: white;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.island-core small {
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.island-glow {
+    position: absolute;
+    inset: 5px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0,234,255,.2);
+
+    box-shadow:
+        0 0 25px rgba(0,234,255,.2);
+
+    animation: islandPulse 3s ease-in-out infinite;
+}
+
+.island:hover .island-core {
+    transform: scale(1.08);
+
+    box-shadow:
+        inset 0 0 40px rgba(0, 234, 255, 0.15),
+        0 0 70px rgba(0, 234, 255, 0.45);
+}
+
+.island:hover .island-glow {
+    border-color: var(--cyan);
+
+    box-shadow:
+        0 0 60px rgba(0,234,255,.5);
+}
+
+
+/* POSITIONS */
+
+.dsa {
+    left: 27%;
+    top: 48%;
+}
+
+.dbms {
+    left: 70%;
+    top: 40%;
+}
+
+.python {
+    left: 62%;
+    top: 72%;
+}
+
+.java {
+    left: 35%;
+    top: 78%;
+}
+
+
+/* COLORS */
+
+.dsa .island-core {
+    border-color: rgba(0,234,255,.4);
+}
+
+.dbms .island-core {
+    border-color: rgba(157,92,255,.4);
+}
+
+.python .island-core {
+    border-color: rgba(57,255,154,.4);
+}
+
+.java .island-core {
+    border-color: rgba(255,79,216,.4);
+}
+
+
+/* CONNECTIONS */
+
+.connection {
+    position: absolute;
+
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,234,255,.5),
+        transparent
+    );
+
+    transform-origin: left;
+
+    opacity: .4;
+
+    animation: connectionPulse 3s infinite;
+}
+
+.connection-one {
+    width: 450px;
+
+    left: 34%;
+    top: 49%;
+
+    transform: rotate(-8deg);
+}
+
+.connection-two {
+    width: 300px;
+
+    left: 38%;
+    top: 65%;
+
+    transform: rotate(25deg);
+}
+
+.connection-three {
+    width: 300px;
+
+    left: 63%;
+    top: 53%;
+
+    transform: rotate(85deg);
+}
+
+
+/* PLAYER */
+
+.player-node {
+    position: absolute;
+
+    left: 50%;
+    top: 52%;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--cyan);
+
+    box-shadow:
+        0 0 10px var(--cyan),
+        0 0 30px var(--cyan);
+
+    animation: playerPulse 2s infinite;
+}
+
+.player-node div {
+    position: absolute;
+
+    inset: 5px;
+
+    border-radius: 50%;
+
+    background: var(--cyan);
+}

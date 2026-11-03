@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CODEVERSE</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/world.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN -->
+
+    <div id="loading-screen">
+
+        <div class="loader-core">
+            <div class="loader-ring"></div>
+            <div class="loader-ring ring-two"></div>
+
+            <div class="loader-text">
+                CODEVERSE
+            </div>
+        </div>
+
+        <div class="loading-status">
+            INITIALIZING KNOWLEDGE GRID...
+        </div>
+
+    </div>
+
+
+    <!-- APPLICATION -->
+
+    <main id="app">
+
+        <!-- HUD -->
+
+        <header class="hud">
+
+            <div class="logo">
+                <span class="logo-symbol">◇</span>
+                CODEVERSE
+            </div>
+
+            <div class="player-stats">
+
+                <div class="stat">
+                    <span>LVL</span>
+                    <strong id="level">01</strong>
+                </div>
+
+                <div class="stat xp-stat">
+                    <span>XP</span>
+                    <strong id="xp">0000</strong>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- WORLD SCREEN -->
+
+        <section id="world-screen" class="screen active">
+
+            <div class="world-title">
+
+                <p class="system-label">
+                    KNOWLEDGE GRID // ONLINE
+                </p>
+
+                <h1>
+                    EXPLORE THE
+                    <span>CODEVERSE</span>
+                </h1>
+
+                <p>
+                    Choose your sector and begin your journey.
+                </p>
+
+            </div>
+
+
+            <div class="world">
+
+                <div class="grid"></div>
+
+                <div class="stars"></div>
+
+
+                <!-- CONNECTION LINES -->
+
+                <div class="connection connection-one"></div>
+                <div class="connection connection-two"></div>
+                <div class="connection connection-three"></div>
+
+
+                <!-- DSA -->
+
+                <button
+                    class="island dsa"
+                    data-island="dsa">
+
+                    <div class="island-glow"></div>
+
+                    <div class="island-core">
+                        <span>DSA</span>
+                        <small>DATA STRUCTURES</small>
+                    </div>
+
+                </button>
+
+
+                <!-- DBMS -->
+
+                <button
+                    class="island dbms"
+                    data-island="dbms">
+
+                    <div class="island-glow"></div>
+
+                    <div class="island-core">
+                        <span>DBMS</span>
+                        <small>DATABASE SYSTEMS</small>
+                    </div>
+
+                </button>
+
+
+                <!-- PYTHON -->
+
+                <button
+                    class="island python"
+                    data-island="python">
+
+                    <div class="island-glow"></div>
+
+                    <div class="island-core">
+                        <span>PYTHON</span>
+                        <small>PYTHON CORE</small>
+                    </div>
+
+                </button>
+
+
+                <!-- JAVA -->
+
+                <button
+                    class="island java"
+                    data-island="java">
+
+                    <div class="island-glow"></div>
+
+                    <div class="island-core">
+                        <span>JAVA</span>
+                        <small>JAVA SYSTEM</small>
+                    </div>
+
+                </button>
+
+
+                <!-- PLAYER -->
+
+                <div class="player-node">
+                    <div></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ISLAND SCREEN -->
+
+        <section id="island-screen" class="screen">
+
+            <button id="back-world" class="back-button">
+                ← WORLD
+            </button>
+
+            <div class="island-header">
+
+                <div>
+                    <span class="system-label">
+                        SECTOR DETECTED
+                    </span>
+
+                    <h2 id="island-title">
+                        DSA
+                    </h2>
+
+                    <p id="island-description"></p>
+                </div>
+
+            </div>
+
+
+           <div id="stage-map" class="stage-map">
+    <svg class="stage-route" viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid meet">
+
+        <defs>
+            <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" />
+                <stop offset="50%" />
+                <stop offset="100%" />
+            </linearGradient>
+
+            <filter id="energyGlow">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+
+            <filter id="nodeGlow">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Main route -->
+        <path
+            id="main-route"
+            class="route-base"
+            d="M 150 80
+               C 300 120, 300 230, 500 230
+               C 700 230, 700 100, 850 150
+               C 930 180, 850 330, 700 360
+               C 550 390, 350 330, 250 440
+               C 180 515, 300 560, 500 550"
+        />
+
+        <!-- Animated energy -->
+        <path
+            id="energy-route"
+            class="route-energy"
+            d="M 150 80
+               C 300 120, 300 230, 500 230
+               C 700 230, 700 100, 850 150
+               C 930 180, 850 330, 700 360
+               C 550 390, 350 330, 250 440
+               C 180 515, 300 560, 500 550"
+        />
+
+        <!-- Moving energy particle -->
+        <circle id="travel-particle" class="travel-particle" r="8">
+            <animateMotion
+                id="particle-motion"
+                dur="2s"
+                begin="indefinite"
+                repeatCount="1"
+                path="M 150 80
+                     C 300 120, 300 230, 500 230
+                     C 700 230, 700 100, 850 150
+                     C 930 180, 850 330, 700 360
+                     C 550 390, 350 330, 250 440
+                     C 180 515, 300 560, 500 550"/>
+        </circle>
+
+        <!-- Stage nodes -->
+        <g id="svg-stages"></g>
+
+    </svg>
+</div>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+
+        <section id="quiz-screen" class="screen">
+
+            <button id="back-island" class="back-button">
+                ← SECTOR
+            </button>
+
+
+            <div class="quiz-container">
+
+                <div class="quiz-top">
+
+                    <div>
+                        <span id="quiz-island">
+                            DSA
+                        </span>
+
+                        <span class="separator">
+                            //
+                        </span>
+
+                        <span id="quiz-stage">
+                            STAGE 01
+                        </span>
+                    </div>
+
+                    <div id="question-number">
+                        QUESTION 01 / 03
+                    </div>
+
+                </div>
+
+
+                <div class="progress-bar">
+                    <div id="quiz-progress"></div>
+                </div>
+
+
+                <div class="question-panel">
+
+                    <div class="question-tag">
+                        QUESTION
+                    </div>
+
+                    <h2 id="question-text">
+                        Loading question...
+                    </h2>
+
+
+                    <div id="options">
+
+                        <!-- Options generated here -->
+
+                    </div>
+
+                </div>
+
+
+                <div class="quiz-footer">
+
+                    <div>
+                        XP
+                        <strong id="question-xp">
+                            +100
+                        </strong>
+                    </div>
+
+                    <div id="combo">
+                        COMBO × 0
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+
+        <section id="result-screen" class="screen">
+
+            <div class="result-box">
+
+                <div class="result-symbol">
+                    ◈
+                </div>
+
+                <span class="system-label">
+                    STAGE COMPLETE
+                </span>
+
+                <h2 id="result-title">
+                    ARRAY AWAKENING
+                </h2>
+
+                <div class="result-score">
+
+                    <span>SCORE</span>
+
+                    <strong id="result-score">
+                        0 / 3
+                    </strong>
+
+                </div>
+
+                <div class="result-xp">
+                    +<span id="result-xp">0</span> XP
+                </div>
+
+                <button id="continue-button"  class="next-stage-btn">
+                    CONTINUE →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="notification"></div>
+
+
+    <script src="js/xml-loader.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

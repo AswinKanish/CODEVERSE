@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE codeverse SYSTEM "quizzes.dtd">
+
+<codeverse>
+
+    <!-- ==================== DSA ==================== -->
+
+    <island id="dsa">
+
+        <name>Data Structures</name>
+
+        <description>
+            Navigate through algorithms, structures and computational challenges.
+        </description>
+
+
+        <!-- STAGE 1 -->
+
+        <stage id="dsa1">
+
+            <name>Array Awakening</name>
+
+            <question id="dsa1q1">
+                <text>
+                    What is the time complexity of accessing an element in an array using its index?
+                </text>
+
+                <options>
+                    <option id="A">O(n)</option>
+                    <option id="B">O(log n)</option>
+                    <option id="C">O(1)</option>
+                    <option id="D">O(n²)</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="dsa1q2">
+                <text>
+                    Which data structure follows the LIFO principle?
+                </text>
+
+                <options>
+                    <option id="A">Queue</option>
+                    <option id="B">Stack</option>
+                    <option id="C">Graph</option>
+                    <option id="D">Heap</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="dsa1q3">
+                <text>
+                    What is the worst-case time complexity of linear search?
+                </text>
+
+                <options>
+                    <option id="A">O(1)</option>
+                    <option id="B">O(log n)</option>
+                    <option id="C">O(n)</option>
+                    <option id="D">O(n log n)</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+        </stage>
+
+
+        <!-- STAGE 2 -->
+
+        <stage id="dsa2">
+
+            <name>Linked Network</name>
+
+            <question id="dsa2q1">
+                <text>
+                    Which pointer connects a node to the next node in a singly linked list?
+                </text>
+
+                <options>
+                    <option id="A">Next</option>
+                    <option id="B">Previous</option>
+                    <option id="C">Root</option>
+                    <option id="D">Parent</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="dsa2q2">
+                <text>
+                    What is the time complexity of inserting a node at the beginning of a linked list?
+                </text>
+
+                <options>
+                    <option id="A">O(n)</option>
+                    <option id="B">O(log n)</option>
+                    <option id="C">O(1)</option>
+                    <option id="D">O(n²)</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="dsa2q3">
+                <text>
+                    Which data structure can be used to implement a stack?
+                </text>
+
+                <options>
+                    <option id="A">Array</option>
+                    <option id="B">Linked List</option>
+                    <option id="C">Both A and B</option>
+                    <option id="D">Graph</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>150</xp>
+            </question>
+
+        </stage>
+
+
+        <!-- STAGE 3 -->
+
+        <stage id="dsa3">
+
+            <name>Stack Protocol</name>
+
+            <question id="dsa3q1">
+                <text>
+                    Which operation removes the top element from a stack?
+                </text>
+
+                <options>
+                    <option id="A">Push</option>
+                    <option id="B">Pop</option>
+                    <option id="C">Peek</option>
+                    <option id="D">Insert</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="dsa3q2">
+                <text>
+                    Which data structure follows the FIFO principle?
+                </text>
+
+                <options>
+                    <option id="A">Stack</option>
+                    <option id="B">Queue</option>
+                    <option id="C">Tree</option>
+                    <option id="D">Heap</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="dsa3q3">
+                <text>
+                    What does the peek operation do in a stack?
+                </text>
+
+                <options>
+                    <option id="A">Deletes the stack</option>
+                    <option id="B">Returns the top element without removing it</option>
+                    <option id="C">Adds an element</option>
+                    <option id="D">Sorts the stack</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+        </stage>
+
+
+        <!-- STAGE 4 -->
+
+        <stage id="dsa4">
+
+            <name>Tree Nexus</name>
+
+            <question id="dsa4q1">
+                <text>
+                    Which node is at the top of a tree?
+                </text>
+
+                <options>
+                    <option id="A">Leaf</option>
+                    <option id="B">Root</option>
+                    <option id="C">Child</option>
+                    <option id="D">Branch</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="dsa4q2">
+                <text>
+                    Which traversal visits Root, Left, Right?
+                </text>
+
+                <options>
+                    <option id="A">Inorder</option>
+                    <option id="B">Postorder</option>
+                    <option id="C">Preorder</option>
+                    <option id="D">Level order</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="dsa4q3">
+                <text>
+                    A node with no children is called what?
+                </text>
+
+                <options>
+                    <option id="A">Root</option>
+                    <option id="B">Parent</option>
+                    <option id="C">Leaf</option>
+                    <option id="D">Branch</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>250</xp>
+            </question>
+
+        </stage>
+
+
+        <!-- STAGE 5 -->
+
+        <stage id="dsa5">
+
+            <name>Graph Frontier</name>
+
+            <question id="dsa5q1">
+                <text>
+                    Which algorithm is commonly used for traversing a graph level by level?
+                </text>
+
+                <options>
+                    <option id="A">DFS</option>
+                    <option id="B">BFS</option>
+                    <option id="C">Binary Search</option>
+                    <option id="D">Merge Sort</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="dsa5q2">
+                <text>
+                    Which data structure is commonly used by BFS?
+                </text>
+
+                <options>
+                    <option id="A">Stack</option>
+                    <option id="B">Queue</option>
+                    <option id="C">Heap</option>
+                    <option id="D">Array only</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="dsa5q3">
+                <text>
+                    Which algorithm can be used to find the shortest path in a graph with non-negative edge weights?
+                </text>
+
+                <options>
+                    <option id="A">Dijkstra's algorithm</option>
+                    <option id="B">DFS</option>
+                    <option id="C">Bubble Sort</option>
+                    <option id="D">Binary Search</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>300</xp>
+            </question>
+
+        </stage>
+
+    </island>
+
+
+    <!-- ==================== DBMS ==================== -->
+
+    <island id="dbms">
+
+        <name>Database Systems</name>
+
+        <description>
+            Enter the data vault and solve relational database challenges.
+        </description>
+
+
+        <stage id="dbms1">
+
+            <name>SQL Gateway</name>
+
+            <question id="dbms1q1">
+                <text>Which SQL command is used to retrieve data?</text>
+
+                <options>
+                    <option id="A">GET</option>
+                    <option id="B">SELECT</option>
+                    <option id="C">FETCH</option>
+                    <option id="D">READ</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="dbms1q2">
+                <text>Which key uniquely identifies a row in a table?</text>
+
+                <options>
+                    <option id="A">Foreign Key</option>
+                    <option id="B">Candidate Key</option>
+                    <option id="C">Primary Key</option>
+                    <option id="D">Composite Key</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="dbms1q3">
+                <text>Which SQL clause filters rows?</text>
+
+                <options>
+                    <option id="A">ORDER BY</option>
+                    <option id="B">GROUP BY</option>
+                    <option id="C">WHERE</option>
+                    <option id="D">SORT</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="dbms2">
+
+            <name>Relational Vault</name>
+
+            <question id="dbms2q1">
+                <text>What does a foreign key primarily establish?</text>
+
+                <options>
+                    <option id="A">A relationship between tables</option>
+                    <option id="B">A new database</option>
+                    <option id="C">A sorted table</option>
+                    <option id="D">A backup</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="dbms2q2">
+                <text>Which SQL command adds a new row?</text>
+
+                <options>
+                    <option id="A">ADD</option>
+                    <option id="B">INSERT</option>
+                    <option id="C">CREATE</option>
+                    <option id="D">UPDATE</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="dbms2q3">
+                <text>Which command modifies existing rows?</text>
+
+                <options>
+                    <option id="A">ALTER</option>
+                    <option id="B">UPDATE</option>
+                    <option id="C">MODIFY</option>
+                    <option id="D">CHANGE</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>150</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="dbms3">
+
+            <name>Query Engine</name>
+
+            <question id="dbms3q1">
+                <text>Which clause is used to group rows with the same values?</text>
+
+                <options>
+                    <option id="A">GROUP BY</option>
+                    <option id="B">ORDER BY</option>
+                    <option id="C">WHERE</option>
+                    <option id="D">JOIN</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="dbms3q2">
+                <text>Which SQL operation combines rows from multiple tables?</text>
+
+                <options>
+                    <option id="A">JOIN</option>
+                    <option id="B">MERGE ONLY</option>
+                    <option id="C">CONNECT</option>
+                    <option id="D">LINK</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="dbms3q3">
+                <text>Which function returns the number of rows?</text>
+
+                <options>
+                    <option id="A">SUM()</option>
+                    <option id="B">COUNT()</option>
+                    <option id="C">TOTAL()</option>
+                    <option id="D">NUMBER()</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="dbms4">
+
+            <name>Normalization Core</name>
+
+            <question id="dbms4q1">
+                <text>What is the main goal of normalization?</text>
+
+                <options>
+                    <option id="A">Increase redundancy</option>
+                    <option id="B">Reduce redundancy</option>
+                    <option id="C">Delete all keys</option>
+                    <option id="D">Remove relationships</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="dbms4q2">
+                <text>Which normal form removes repeating groups?</text>
+
+                <options>
+                    <option id="A">1NF</option>
+                    <option id="B">2NF</option>
+                    <option id="C">3NF</option>
+                    <option id="D">BCNF</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="dbms4q3">
+                <text>Which normal form removes transitive dependency?</text>
+
+                <options>
+                    <option id="A">1NF</option>
+                    <option id="B">2NF</option>
+                    <option id="C">3NF</option>
+                    <option id="D">4NF</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>250</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="dbms5">
+
+            <name>Transaction Core</name>
+
+            <question id="dbms5q1">
+                <text>Which property means a transaction is treated as one unit?</text>
+
+                <options>
+                    <option id="A">Consistency</option>
+                    <option id="B">Atomicity</option>
+                    <option id="C">Isolation</option>
+                    <option id="D">Durability</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="dbms5q2">
+                <text>Which command permanently saves a transaction?</text>
+
+                <options>
+                    <option id="A">SAVE</option>
+                    <option id="B">COMMIT</option>
+                    <option id="C">STORE</option>
+                    <option id="D">APPLY</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="dbms5q3">
+                <text>Which command reverses an uncommitted transaction?</text>
+
+                <options>
+                    <option id="A">UNDO</option>
+                    <option id="B">ROLLBACK</option>
+                    <option id="C">REVERSE</option>
+                    <option id="D">CANCEL</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+        </stage>
+
+    </island>
+
+
+    <!-- ==================== PYTHON ==================== -->
+
+    <island id="python">
+
+        <name>Python Core</name>
+
+        <description>
+            Enter the Python sector and decode the language challenges.
+        </description>
+
+
+        <stage id="python1">
+
+            <name>Python Boot</name>
+
+            <question id="python1q1">
+                <text>Which keyword defines a function in Python?</text>
+
+                <options>
+                    <option id="A">function</option>
+                    <option id="B">define</option>
+                    <option id="C">def</option>
+                    <option id="D">func</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="python1q2">
+                <text>Which collection is ordered and mutable?</text>
+
+                <options>
+                    <option id="A">Tuple</option>
+                    <option id="B">List</option>
+                    <option id="C">Set</option>
+                    <option id="D">FrozenSet</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="python1q3">
+                <text>Which symbol starts a comment in Python?</text>
+
+                <options>
+                    <option id="A">//</option>
+                    <option id="B">/*</option>
+                    <option id="C">#</option>
+                    <option id="D">--</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="python2">
+
+            <name>Data Forge</name>
+
+            <question id="python2q1">
+                <text>Which keyword is used to create a loop over a sequence?</text>
+
+                <options>
+                    <option id="A">loop</option>
+                    <option id="B">for</option>
+                    <option id="C">repeat</option>
+                    <option id="D">iterate</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="python2q2">
+                <text>Which data type stores key-value pairs?</text>
+
+                <options>
+                    <option id="A">List</option>
+                    <option id="B">Tuple</option>
+                    <option id="C">Dictionary</option>
+                    <option id="D">Set</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="python2q3">
+                <text>Which function returns the length of an object?</text>
+
+                <options>
+                    <option id="A">size()</option>
+                    <option id="B">length()</option>
+                    <option id="C">len()</option>
+                    <option id="D">count()</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>150</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="python3">
+
+            <name>Function Matrix</name>
+
+            <question id="python3q1">
+                <text>Which keyword returns a value from a function?</text>
+
+                <options>
+                    <option id="A">send</option>
+                    <option id="B">return</option>
+                    <option id="C">output</option>
+                    <option id="D">yield-value</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="python3q2">
+                <text>What does *args allow a function to accept?</text>
+
+                <options>
+                    <option id="A">Variable positional arguments</option>
+                    <option id="B">Only strings</option>
+                    <option id="C">Only one argument</option>
+                    <option id="D">Only keyword arguments</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="python3q3">
+                <text>What does **kwargs represent?</text>
+
+                <options>
+                    <option id="A">Variable keyword arguments</option>
+                    <option id="B">Variable strings</option>
+                    <option id="C">A loop</option>
+                    <option id="D">A class</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="python4">
+
+            <name>OOP Sector</name>
+
+            <question id="python4q1">
+                <text>Which keyword defines a class in Python?</text>
+
+                <options>
+                    <option id="A">object</option>
+                    <option id="B">class</option>
+                    <option id="C">struct</option>
+                    <option id="D">type</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="python4q2">
+                <text>Which method is commonly used as a constructor?</text>
+
+                <options>
+                    <option id="A">__start__</option>
+                    <option id="B">__create__</option>
+                    <option id="C">__init__</option>
+                    <option id="D">__newclass__</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="python4q3">
+                <text>Which concept allows a child class to reuse a parent class?</text>
+
+                <options>
+                    <option id="A">Inheritance</option>
+                    <option id="B">Compilation</option>
+                    <option id="C">Iteration</option>
+                    <option id="D">Parsing</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>250</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="python5">
+
+            <name>Algorithm Lab</name>
+
+            <question id="python5q1">
+                <text>Which module provides tools for working with JSON?</text>
+
+                <options>
+                    <option id="A">json</option>
+                    <option id="B">data</option>
+                    <option id="C">object</option>
+                    <option id="D">parse</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="python5q2">
+                <text>Which data structure uses key-value pairs?</text>
+
+                <options>
+                    <option id="A">Tuple</option>
+                    <option id="B">Dictionary</option>
+                    <option id="C">List</option>
+                    <option id="D">String</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="python5q3">
+                <text>Which keyword is used to handle exceptions?</text>
+
+                <options>
+                    <option id="A">catch</option>
+                    <option id="B">except</option>
+                    <option id="C">error</option>
+                    <option id="D">handle</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+        </stage>
+
+    </island>
+
+
+    <!-- ==================== JAVA ==================== -->
+
+    <island id="java">
+
+        <name>Java System</name>
+
+        <description>
+            Enter the Java sector and survive object-oriented challenges.
+        </description>
+
+
+        <stage id="java1">
+
+            <name>Object Core</name>
+
+            <question id="java1q1">
+                <text>Which keyword creates an object in Java?</text>
+
+                <options>
+                    <option id="A">create</option>
+                    <option id="B">new</option>
+                    <option id="C">object</option>
+                    <option id="D">make</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="java1q2">
+                <text>Which method is the entry point of a Java application?</text>
+
+                <options>
+                    <option id="A">start()</option>
+                    <option id="B">run()</option>
+                    <option id="C">main()</option>
+                    <option id="D">execute()</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>100</xp>
+            </question>
+
+            <question id="java1q3">
+                <text>Which concept allows one class to acquire properties of another?</text>
+
+                <options>
+                    <option id="A">Encapsulation</option>
+                    <option id="B">Inheritance</option>
+                    <option id="C">Abstraction</option>
+                    <option id="D">Compilation</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>100</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="java2">
+
+            <name>Inheritance Lab</name>
+
+            <question id="java2q1">
+                <text>Which keyword is used for class inheritance in Java?</text>
+
+                <options>
+                    <option id="A">inherits</option>
+                    <option id="B">extends</option>
+                    <option id="C">implements</option>
+                    <option id="D">superclass</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="java2q2">
+                <text>Which keyword refers to the parent class?</text>
+
+                <options>
+                    <option id="A">parent</option>
+                    <option id="B">base</option>
+                    <option id="C">super</option>
+                    <option id="D">this</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>150</xp>
+            </question>
+
+            <question id="java2q3">
+                <text>Can a Java class extend multiple classes?</text>
+
+                <options>
+                    <option id="A">Yes</option>
+                    <option id="B">No</option>
+                    <option id="C">Only abstract classes</option>
+                    <option id="D">Only interfaces</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>150</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="java3">
+
+            <name>Exception Zone</name>
+
+            <question id="java3q1">
+                <text>Which block handles an exception?</text>
+
+                <options>
+                    <option id="A">catch</option>
+                    <option id="B">handle</option>
+                    <option id="C">error</option>
+                    <option id="D">exception</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="java3q2">
+                <text>Which keyword explicitly throws an exception?</text>
+
+                <options>
+                    <option id="A">throw</option>
+                    <option id="B">throws</option>
+                    <option id="C">exception</option>
+                    <option id="D">raise</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>200</xp>
+            </question>
+
+            <question id="java3q3">
+                <text>Which block normally executes whether an exception occurs or not?</text>
+
+                <options>
+                    <option id="A">catch</option>
+                    <option id="B">finally</option>
+                    <option id="C">throw</option>
+                    <option id="D">tryonly</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>200</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="java4">
+
+            <name>Collection Grid</name>
+
+            <question id="java4q1">
+                <text>Which interface represents an ordered collection that allows duplicates?</text>
+
+                <options>
+                    <option id="A">Set</option>
+                    <option id="B">List</option>
+                    <option id="C">Map</option>
+                    <option id="D">QueueOnly</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="java4q2">
+                <text>Which collection does not allow duplicate elements?</text>
+
+                <options>
+                    <option id="A">List</option>
+                    <option id="B">Set</option>
+                    <option id="C">ArrayList</option>
+                    <option id="D">Vector</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>250</xp>
+            </question>
+
+            <question id="java4q3">
+                <text>Which interface stores key-value pairs?</text>
+
+                <options>
+                    <option id="A">List</option>
+                    <option id="B">Set</option>
+                    <option id="C">Map</option>
+                    <option id="D">Collection</option>
+                </options>
+
+                <answer>C</answer>
+                <xp>250</xp>
+            </question>
+
+        </stage>
+
+
+        <stage id="java5">
+
+            <name>JVM Frontier</name>
+
+            <question id="java5q1">
+                <text>What does JVM stand for?</text>
+
+                <options>
+                    <option id="A">Java Variable Machine</option>
+                    <option id="B">Java Virtual Machine</option>
+                    <option id="C">Java Visual Machine</option>
+                    <option id="D">Java Verified Machine</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="java5q2">
+                <text>Which component executes Java bytecode?</text>
+
+                <options>
+                    <option id="A">JVM</option>
+                    <option id="B">JDK only</option>
+                    <option id="C">Javadoc</option>
+                    <option id="D">JAR only</option>
+                </options>
+
+                <answer>A</answer>
+                <xp>300</xp>
+            </question>
+
+            <question id="java5q3">
+                <text>Which tool is primarily used to compile Java source code?</text>
+
+                <options>
+                    <option id="A">java</option>
+                    <option id="B">javac</option>
+                    <option id="C">jvm</option>
+                    <option id="D">jar</option>
+                </options>
+
+                <answer>B</answer>
+                <xp>300</xp>
+            </question>
+
+        </stage>
+
+    </island>
+
+</codeverse>

@@ -1,0 +1,31 @@
+<!ELEMENT codeverse (island+)>
+
+<!ELEMENT island (name, description, stage+)>
+<!ATTLIST island
+    id ID #REQUIRED
+>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT stage (name, question+)>
+<!ATTLIST stage
+    id ID #REQUIRED
+>
+
+<!ELEMENT question (text, options, answer, xp)>
+<!ATTLIST question
+    id ID #REQUIRED
+>
+
+<!ELEMENT text (#PCDATA)>
+
+<!ELEMENT options (option, option, option, option)>
+
+<!ELEMENT option (#PCDATA)>
+<!ATTLIST option
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT answer (#PCDATA)>
+<!ELEMENT xp (#PCDATA)>
